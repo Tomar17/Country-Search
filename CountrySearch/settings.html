@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="settings.css">
+    <script src="https://kit.fontawesome.com/9e9f535c6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="main">
+            <div class="btns">
+                <a href="index.html"><button >MAIN</button></a>
+            
+                <a href="" class="selected"><button >SETTINGS</button></a>
+            </div>
+            <div class="box">
+                <h2>Information</h2>
+                <p>Select the attributes you want to show for each country . . .</p>
+                <br>
+                <div class="options">
+
+                    <div><input class="choices" id="countryCapital" type="checkbox">Capital - <i class="fas fa-city"></i></div>
+                    <hr>
+                    <div><input class="choices" id="countryPopulation" type="checkbox">Population - <i class="fas fa-children"></i></div>
+                    <hr>
+                    <div><input class="choices" id="countryCurrency" type="checkbox">Currency - <i class="fas fa-coins"></i></div>
+                    <hr>
+                    <div><input class="choices" id="countryLanguage" type="checkbox">Langauge - <i class="fas fa-comments"></i></div>
+                    <hr>
+                    <div><input class="choices" id="countryContinent" type="checkbox">Continent - <i class="fas fa-earth"></i></div>
+
+                </div>
+                <div class="saveBtn"><button>Save</button></div>
+                
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+
+    <script>
+        let attr =[]
+        attr=localStorage.getItem('attr').split(',')
+        console.log(`ff${attr}`)
+        attr.forEach((element)=>{
+            try{
+               document.getElementById(element).checked=true 
+            }catch{
+                null
+            }
+            
+        })
+
+
+        const update = ()=>{
+            attr=[]
+            const choices = document.querySelectorAll('.choices')
+            console.log(choices)
+            choices.forEach((element)=>{
+                if (element.checked){
+                    console.log('true')
+                    attr.push(element.id)
+                }else{
+                    console.log('false')
+                }
+            })
+            localStorage.setItem('attr',attr.toString())
+            console.log(attr.toString())
+        }
+
+        document.querySelector('.saveBtn').addEventListener('click',update)
+    </script>
+</html>

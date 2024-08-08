@@ -1,0 +1,77 @@
+.box{
+    padding-right:0px;
+    padding-left:0px;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.searchTab{
+    border-bottom: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3px;
+    padding: 0px;  
+    padding-bottom: 30px !important;
+
+}
+
+.searchTab input{
+    /* border-top-left-radius:10px ;
+    border-bottom-left-radius:10px ; */
+    /* border: 1px solid !important; */
+    border: none;
+    border-bottom: 2px solid rgba(139, 237, 178, 0.764);
+    padding-left: 20px;
+    font-family: fantasy;
+    font-size: 2rem;
+    outline: none;
+}
+.searchTab button{
+    border-top-right-radius:10px ;
+    /* border-bottom-right-radius:10px ; */
+    font-size: 3rem;
+    border: none;
+    background-color: white;
+    
+}
+
+.searchTab button:hover{
+    font-size: 3.2rem !important;
+    /* border-bottom: 2px solid black; */
+    cursor: pointer;
+    
+    
+    
+}
+
+.flagDiv{
+    padding: 10px;
+    display: flex;
+    
+    justify-content: center;
+    /* border: 1px solid; */
+
+}
+
+#flagId{
+    /* border: 1px solid; */
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.159);
+}
+
+#nameId{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.choicesDiv{
+    padding-left: 30px;
+    font-size: 1.2rem;
+}

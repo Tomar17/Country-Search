@@ -1,0 +1,94 @@
+body{
+    font-family:fantasy;
+    size: 2rem;
+    background: linear-gradient(to bottom right,#e66465, #9198e5);
+    height: 100vh;
+}
+
+.selected{
+    background-color: white !important;
+}
+.selected button{
+    background-color: white !important;
+}
+
+.container{
+    display: flex;
+    /* border: 1px solid ; */
+    margin-top: 10vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.main{
+    
+    /* border: 1px solid; */
+    height: 90vh;
+    width: 70vw;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.303);
+}
+
+@media screen and (max-width:800px) {
+    .main{
+        
+        height: 90vh;
+        width: 100vw;
+    }
+}
+
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    
+    
+
+}
+
+.btns a{
+    /* border: 1px solid black !important; */
+    width: 50%;
+    border-radius: 0;
+    border: none;
+    height: 50px;
+    
+}
+
+.btns a button{
+    font-family:fantasy;
+    font-size: 2rem;
+    /* border: 1px solid red !important; */
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    height: 50px;
+}
+.btns a button:hover{
+    font-size: 2.3rem;
+    background-color: black !important;
+    color: white;
+    
+}
+
+.btns a:nth-child(1) button{
+    border-top-left-radius: 20px;
+}
+
+.btns a:nth-child(2) button{
+    border-top-right-radius: 20px;
+}
+
+.btns a:nth-child(1){
+    border-top-left-radius: 20px;
+}
+
+.btns a:nth-child(2){
+    border-top-right-radius: 20px;
+}
+
+a{
+    text-decoration: none;
+}

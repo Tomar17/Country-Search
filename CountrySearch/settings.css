@@ -1,0 +1,45 @@
+.box{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* border: 1px solid; */
+    
+    width: 90%;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* border: 1px solid; */
+    float: left;
+    font-size: 1.5rem;
+    width: 90%;
+    
+    
+}
+
+.saveBtn{
+    display: flex;
+    justify-content: center;
+
+}
+
+.saveBtn button{
+    background-color: aquamarine;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: fantasy;
+    border-radius: 5px;
+    width: 30%;
+    border: none;
+}
+
+.saveBtn button:hover{
+    /* background-color: black; */
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
